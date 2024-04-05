@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations | Smoothie Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Make a Reservation</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="nav-button">Home</a></li>
+            <li><a href="menu.html" class="nav-button">Menu</a></li>
+            <li><a href="reservations.html" class="nav-button">Reservations</a></li>
+            <li><a href="locations.html" class="nav-button">Locations</a></li>
+        </ul>
+    </nav>
+    <!--this section was created with the help of ChatGPT-->
+    <section class="reservation-form">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="people">Number of People:</label>
+            <input type="number" id="people" name="people" min="1" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Time:</label>
+            <select id="time" name="time" required>
+                <option value="08:00">08:00 AM</option>
+                <option value="08:30">08:30 AM</option>
+                <option value="09:00">09:00 AM</option>
+                <option value="09:30">09:30 AM</option>
+                <option value="10:00">10:00 AM</option>
+                <option value="10:30">10:30 AM</option>
+                <option value="11:00">11:00 AM</option>
+                <option value="11:30">11:30 AM</option>
+                <option value="12:00">12:00 PM</option>
+                <option value="12:30">12:30 PM</option>
+                <option value="13:00">01:00 PM</option>
+                <option value="13:30">01:30 PM</option>
+                <option value="14:00">14:00 PM</option>
+                <option value="21:00">09:00 PM</option>
+                <option value="21:30">09:30 PM</option>
+            </select>
+
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </section>
+    <footer>
+        <p>Contact us at smoothies@thejuicelaundrys.com</p>
+    </footer>
+</body>
+</html>
